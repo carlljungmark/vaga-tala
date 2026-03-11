@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-bs-theme="light" lang="en">
+<html data-bs-theme="light" lang="en" style="font-family: Inter, sans-serif;">
 
 <head>
     <meta charset="utf-8">
@@ -16,6 +16,8 @@
     </script>
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
     <link rel="stylesheet" href="assets/fonts/fontawesome-all.min.css">
@@ -24,91 +26,131 @@
     <link rel="stylesheet" href="assets/css/bss-overrides.css">
     <link rel="stylesheet" href="assets/css/bootstrap.compiled.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/gota.css">
 </head>
 
-<body style="font-family:'Open Sans', sans-serif;color:rgb(33, 37, 41);">
-    <nav class="navbar navbar-expand-lg fixed-top" style="background:#ffffff00;" data-bs-theme="dark">
-        <div class="container-fluid"><a href="index.html"><img class="img-fluid" width="400" height="94" src="assets/img/vagatala_logo.png" style="width: 160px;"></a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1" type="button"><span class="navbar-toggler-icon"></span></button>
+<body style="font-family: Manrope, sans-serif;">
+    <nav class="navbar navbar-expand-lg fixed-top gota-sticky-nav">
+        <div class="container-fluid"><a href="index.html"><img class="img-fluid" width="400" height="94" src="assets/img/vagatala_logo.png" style="width:160px;"></a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1" type="button"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link fw-semibold" href="#">Hem</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold" href="#">Detaljer</a></li>
-                    <li class="nav-item"><a class="btn btn-outline-light fw-semibold border rounded-pill border-light mx-4 px-4 nav-link" role="button">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Hem</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#approach">Detaljer</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-light fw-semibold border rounded-pill border-light mx-4 px-4 nav-link" role="button" href="kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="header">
-        <div class="text-white pt-5 hero" style="padding-top:120px;">
+    <div class="container">
+        <header class="mt-4 header gota-hero"><span class="mb-1 gota-kicker">Välkommen!</span>
+            <div class="text-white pt-1 hero" style="padding-top:120px;">
+                <div class="container-xl">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="d-flex flex-column justify-content-center p-4 text-container">
+                                <h1 class="display-3 fw-bolder text-start" style="font-family: Inter, sans-serif;">Välkommen till Våga Tala!</h1>
+                                <p class="text-black">Det är mänskligt att känna rädsla och oro när man talar inför en grupp människor - men du kan stegvis bli av med denna rädsla. Starta ett nytt spännande äventyr i ditt liv där du bemästrar talängslan!</p>
+                                <div class="text-center form-container">
+                                    <form class="my-4">
+                                        <div class="my-4"></div>
+                                        <div class="d-grid"><a class="btn btn-primary btn-lg link-light rounded-5" role="button" href="PRPSA-static.html">Utvärdera din talängslan</a></div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <div class="mb-5 image-container"><img class="img-fluid d-none" width="520" height="711" src="assets/img/header-ebook.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="bg-light pb-5 icons showcase-section" id="approach"><span class="code-inline">Approach</span>
             <div class="container-xl">
                 <div class="row">
-                    <div class="col-12 col-md-6">
-                        <div class="mb-5 image-container"><img class="img-fluid" width="520" height="711" src="assets/img/header-ebook.png"></div>
+                    <div class="col-12 col-md-4 d-flex gap-4"><i class="fa fa-bolt fs-2 text-primary"></i>
+                        <div>
+                            <h5 class="fw-bold">Lös upp din rädsla</h5>
+                            <p class="text-muted">använd RÄTT metoder för att stegvis lösa upp din nervositet när du talar, så du blir av med de negativa känslor som slår till som ett blixnedslag när du talar.</p>
+                        </div>
                     </div>
-                    <div class="col-12 col-md-6">
-                        <div class="d-flex flex-column justify-content-center p-4 text-container">
-                            <h1 class="display-3 fw-bold">Välkommen till Våga Tala!</h1>
-                            <p class="lead">Det är mänskligt att känna rädsla och oro när man talar inför en grupp människor - men du kan stegvis bli av med denna rädsla. Starta ett nytt spännande äventyr i ditt liv där du bemästrar talängslan!</p>
-                            <div class="text-center form-container">
-                                <form class="my-4">
-                                    <div class="my-4"></div>
-                                    <div class="d-grid"><a class="btn btn-primary btn-lg link-light rounded-5" role="button" href="PRPSA-static.html">Utvärdera din talängslan</a></div>
-                                </form>
+                    <div class="col-12 col-md-4 d-flex gap-4"><i class="fa fa-bullhorn fs-2 text-secondary"></i>
+                        <div>
+                            <h5 class="fw-bold">Befria din röst</h5>
+                            <p class="text-muted">Lär dig att tala fritt utan att döma dig själv att du är rolig, smart, unik hela tiden. Paradoxalt nog är det när vi slutar döma oss själva som vi briljerar</p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4 d-flex gap-4"><i class="fa fa-power-off fs-2 text-primary"></i>
+                        <div>
+                            <h5 class="fw-bold">Nå din potential</h5>
+                            <p class="text-muted">Kliv in i ditt nya jag som inte hålls tillbaka av gamla program och attityder</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="my-5 details" id="details">
+            <div class="container w-75">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex h-100 flex-column justify-content-center text-container">
+                            <h2 class="display-6">Förändring är möjlig</h2>
+                            <p>När man lider av talängslan (som är fullt mänskligt, ca 77% tycker det är obehagligt att tala inför andra), kan det vara svårt att känna att förändring ens är möjlig. Istället identifierar man sig med sin rädsla och ser det som något som är del av en. Genom att följa stegen under kan man dock över tid släppa taget över sin rädsla. Har du funderat på vem du skulle vara om denna talrädsla var helt borta?</p>
+                            <ul class="list-group lh-lg border-0 list-group-flush">
+                                <li class="list-group-item border-0"><i class="fa fa-square text-primary"></i><strong>&nbsp;Bli vän med din rädsla.</strong><span>&nbsp;Instinktivt arbetar vi emot vår rädsla. Om detta hade fungerat hade talängslan (eller andra rädslor) inte varit ett problem. Vi måste istället gå åt andra hållet.</span></li>
+                                <li class="list-group-item border-0"><i class="fa fa-square text-primary"></i><strong>&nbsp;Upplev rädslan i höga volumer.&nbsp;</strong><span>Hitta sammanhang där du tryggt kan trigga din rädsla (i lagom mängd) återkommande. Detta bör vara utanför din arbetsplats så vi kan experimentera effektivt.</span></li>
+                                <li class="list-group-item border-0 list-group-flush"><i class="fa fa-square text-primary"></i><strong>&nbsp;Släpp taget om rädslan.&nbsp;</strong><span>När du slutar döma din rädsla kommer den släppa sitt tag om dig, och du kommer uppleva en frihet du inte känt på länge.</span></li>
+                            </ul><a class="btn btn-primary rounded-5 align-self-center mt-4 text-white" role="button" href="kontakt.html">Ta kontakt och hör mer</a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                        <div class="p-5 image-container" style="display:none;"><img class="img-fluid" width="505" height="674" src="assets/img/description.png"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="mb-2 showcase-section" id="blogs"><span class="showcase-subtitle">BLog</span>
+            <h2 class="display-6">Blog</h2>
+            <p>Läs de senaste blog-inläggen nedan</p>
+            <div class="mb-4 pattern-card accent"><span class="code-inline">Text</span>
+                <p>Paragraph</p>
+            </div>
+            <div data-bss-type="blog-loop">
+                <div class="row gy-4 row-cols-1 row-cols-md-2 row-cols-lg-3 mt-0" data-bss-type="blog-loop-base">
+                    <div class="col" data-bss-type="blog-loop-item">
+                        <div class="card"><a href="Blog/blog-example.html"><img class="img-fluid card-img-top" src=""></a>
+                            <div class="card-body"><a href="Blog/blog-example.html">
+                                    <h4 class="text-body">Första blog-inlägget</h4>
+                                </a>
+                                <p class="card-text">Ett blog-inlägg som handlar om vad talängslan egentligen är</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" data-bss-type="blog-loop-item">
+                        <div class="card"><a href="Blog/varfor-finns-radslan.html"><img class="img-fluid card-img-top" src=""></a>
+                            <div class="card-body"><a href="Blog/varfor-finns-radslan.html">
+                                    <h4 class="text-body">Första blog-inlägget</h4>
+                                </a>
+                                <p class="card-text">Ett blog-inlägg som handlar om vad talängslan egentligen är</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div><svg class="frame-decoration" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 192.275">
-        <title>frame-decoration</title>
-        <path class="cls-1
-                     " d="M0,158.755s63.9,52.163,179.472,50.736c121.494-1.5,185.839-49.738,305.984-49.733,109.21,0,181.491,51.733,300.537,50.233,123.941-1.562,225.214-50.126,390.43-50.374,123.821-.185,353.982,58.374,458.976,56.373,217.907-4.153,284.6-57.236,284.6-57.236V351.03H0V158.755Z" transform="translate(0 -158.755)"></path>
-      </svg>
-    </header>
-    <section class="bg-light pb-5 icons">
-        <div class="container-xl">
-            <div class="row">
-                <div class="col-12 col-md-4 d-flex gap-4"><i class="fa fa-bolt fs-2 text-primary"></i>
-                    <div>
-                        <h5 class="fw-bold">Lös upp din rädsla</h5>
-                        <p class="text-muted">använd RÄTT metoder för att stegvis lösa upp din nervositet när du talar, så du blir av med de negativa känslor som slår till som ett blixnedslag när du talar.</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 d-flex gap-4"><i class="fa fa-bullhorn fs-2 text-secondary"></i>
-                    <div>
-                        <h5 class="fw-bold">Befria din röst</h5>
-                        <p class="text-muted">Lär dig att tala fritt utan att döma dig själv att du är rolig, smart, unik hela tiden. Paradoxalt nog är det när vi slutar döma oss själva som vi briljerar</p>
-                    </div>
-                </div>
-                <div class="col-12 col-md-4 d-flex gap-4"><i class="fa fa-power-off fs-2 text-primary"></i>
-                    <div>
-                        <h5 class="fw-bold">Nå din potential</h5>
-                        <p class="text-muted">Kliv in i ditt nya jag som inte hålls tillbaka av gamla program och attityder</p>
+        </section>
+        <section class="mb-5 statement">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="bg-light rounded-5 shadow p-4 text-container">
+                            <h2>Bli av med din talängslan</h2>
+                            <p>Du behöver inte vänta till nyår för att införa förändringar i ditt liv, du kan börja IDAG med att ta steg mot att bli av med din talängslan. Förändring är möjlig, men det tar lite tid, så du kan lika gärna se detta som ett spännande äventyr eller ny hobby - för det kommer vara värt det. Det kan vara hjälpsamt att visualisera dig själv ett år från nu, fri från rädsla pga allt jobb du lagt ner, och hur du därifrån ser tillbaka på idag, där du tog beslutet att börja jobba med detta.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="my-5 details" id="details">
-        <div class="container w-75">
-            <div class="row">
-                <div class="col-12">
-                    <div class="d-flex h-100 flex-column justify-content-center text-container">
-                        <h2 class="display-6">Förändring är möjlig</h2>
-                        <p>När man lider av talängslan (som är fullt mänskligt, ca 77% tycker det är obehagligt att tala inför andra), kan det vara svårt att känna att förändring ens är möjlig. Istället identifierar man sig med sin rädsla och ser det som något som är del av en. Genom att följa stegen under kan man dock över tid släppa taget över sin rädsla. Har du funderat på vem du skulle vara om denna talrädsla var helt borta?</p>
-                        <ul class="list-group lh-lg border-0 list-group-flush">
-                            <li class="list-group-item border-0"><i class="fa fa-square text-primary"></i><strong>&nbsp;Bli vän med din rädsla.</strong><span>&nbsp;Instinktivt arbetar vi emot vår rädsla. Om detta hade fungerat hade talängslan (eller andra rädslor) inte varit ett problem. Vi måste istället gå åt andra hållet.</span></li>
-                            <li class="list-group-item border-0"><i class="fa fa-square text-primary"></i><strong>&nbsp;Upplev rädslan i höga volumer.&nbsp;</strong><span>Hitta sammanhang där du tryggt kan trigga din rädsla (i lagom mängd) återkommande. Detta bör vara utanför din arbetsplats så vi kan experimentera effektivt.</span></li>
-                            <li class="list-group-item border-0 list-group-flush"><i class="fa fa-square text-primary"></i><strong>&nbsp;Släpp taget om rädslan.&nbsp;</strong><span>När du slutar döma din rädsla kommer den släppa sitt tag om dig, och du kommer uppleva en frihet du inte känt på länge.</span></li>
-                        </ul><a class="btn btn-primary rounded-5 align-self-start mt-4 text-white" role="button" href="kontakt.html">Ta kontakt och hör mer</a>
-                    </div>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <div class="p-5 image-container" style="display: none;"><img class="img-fluid" width="505" height="674" src="assets/img/description.png"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <div class="modal fade" role="dialog" tabindex="-1" id="modal1">
         <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
@@ -135,19 +177,7 @@
             </div>
         </div>
     </div>
-    <section class="mb-5 statement">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="bg-light rounded-5 p-4 text-container">
-                        <h2>Bli av med din talängslan</h2>
-                        <p>Du behöver inte vänta till nyår för att införa förändringar i ditt liv, du kan börja IDAG med att ta steg mot att bli av med din talängslan. Förändring är möjlig, men det tar lite tid, så du kan lika gärna se detta som ett spännande äventyr eller ny hobby - för det kommer vara värt det. Det kan vara hjälpsamt att visualisera dig själv ett år från nu, fri från rädsla pga allt jobb du lagt ner, och hur du därifrån ser tillbaka på idag, där du tog beslutet att börja jobba med detta.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="my-5 details" style="display: none;">
+    <section class="my-5 details" style="display:none;">
         <div class="container">
             <div class="row">
                 <div class="col col-lg-6">
@@ -193,7 +223,7 @@
             </div>
         </div>
     </div>
-    <section class="mb-8 testimonials" style="display: none;">
+    <section class="mb-8 testimonials" style="display:none;">
         <div class="container">
             <div class="row">
                 <div class="col-auto col-lg-4 text-center"><img class="img-fluid rounded-circle mb-3" src="https://randomuser.me/api/portraits/men/32.jpg">
@@ -211,7 +241,7 @@
             </div>
         </div>
     </section>
-    <section class="download" style="display: none;">
+    <section class="download" style="display:none;">
         <div class="container">
             <div class="row">
                 <div class="col-auto col-lg-5">
@@ -231,7 +261,7 @@
             </div>
         </div>
     </section>
-    <section class="text-bg-dark overflow-hidden py-4 social" id="social" style="display: none;">
+    <section class="text-bg-dark overflow-hidden py-4 social" id="social" style="display:none;">
         <div class="container">
             <div class="row">
                 <div class="col-auto col-md-6 offset-md-3 fs-4 text-center">
@@ -241,25 +271,421 @@
             </div>
         </div>
     </section>
-    <footer class="text-light bg-dark border-primary py-4 border-top">
+    <footer class="text-light bg-dark border-primary py-4 gota-footer">
         <div class="container">
             <div class="row">
-                <div class="col-auto col-md-8">
-                    <ul class="nav nav-tabs border-0">
-                        <li class="nav-item"><a class="nav-link link-light" href="index.html">Hem</a></li>
-                        <li class="nav-item"><a class="nav-link link-light" href="#details">Detaljer</a></li>
-                        <li class="nav-item"><a class="nav-link link-light" href="kontakt.html">Kontakt</a></li>
-                    </ul>
+                <div class="col-auto col-md-6">
+                    <h2 class="mt-3 gota-footer-title">Vänta inte med att våga tala</h2>
+                    <p class="gota-footer-note">Det finns ingen bättre tid att bli av med scenskräcken än just nu!</p>
                 </div>
-                <div class="col-auto col-md-4 d-flex flex-column justify-content-center align-items-center">
-                    <p class="text-end d-none d-md-block ms-0 me-0">Våga Tala 2026&nbsp;</p>
+                <div class="col-auto col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="gota-footer-links"><a href="#">Hem</a><a href="#">Formulär</a><a href="#">Kontakt</a></div>
                 </div>
             </div>
         </div>
     </footer>
+    <script>
+        (function() {
+            let collections = document.querySelectorAll('[data-bss-type="blog-loop"]');
+            let tagNavs = document.querySelectorAll('[data-bss-type="tag-nav"]');
+            let tagLoops = document.querySelectorAll('[data-bss-type="tag-loop"]');
+            let authorLoops = document.querySelectorAll('[data-bss-type="author-loop"]');
+            let authorNavs = document.querySelectorAll('[data-bss-type="author-nav"]');
+
+            window.addEventListener("popstate", (e) => {
+                for (let collection of collections) {
+                    updateCollection(collection);
+                }
+
+                for (let tagNav of tagNavs) {
+                    updateTagNav(tagNav);
+                }
+
+                for (let authorNav of authorNavs) {
+                    updateAuthorNav(authorNav);
+                }
+            });
+
+            for (let collection of collections) {
+
+                updateCollection(collection);
+
+                if (!canPaginateCollection(collection)) continue;
+
+                let pagination = collection.querySelector('[data-bss-type="blog-loop-pagination"]');
+
+                pagination.addEventListener('click', function(e) {
+                    let paginationItem = e.target.closest('.page-item');
+                    if (!paginationItem) return;
+
+                    e.preventDefault();
+
+                    if (paginationItem.classList.contains('disabled') || paginationItem.classList.contains('active')) return;
+
+                    let collection = paginationItem.closest('[data-bss-type="blog-loop"]');
+                    if (!collection) return;
+
+                    let page = parseInt(paginationItem.dataset.page);
+                    if (!page) return;
+
+                    let pageParam = getPageParameter(collection);
+
+                    if (pageParam) {
+                        const url = new URL(window.location);
+                        url.searchParams.set(pageParam, page);
+                        history.pushState({
+                            [pageParam]: page
+                        }, document.title, url);
+
+                        for (let c of collections) {
+                            let param = getPageParameter(c);
+                            if (param !== pageParam) continue;
+                            updateCollection(c);
+                        }
+                    } else {
+                        updateCollection(collection, page);
+                    }
+                });
+            }
+
+            for (let tagNav of tagNavs) {
+                updateTagNav(tagNav);
+                tagNav.addEventListener('click', onTagClick);
+            }
+
+            for (let tagLoop of tagLoops) {
+                tagLoop.addEventListener('click', onTagClick);
+            }
+
+            for (let authorLoop of authorLoops) {
+                authorLoop.addEventListener('click', onAuthorClick);
+            }
+
+            for (let authorNav of authorNavs) {
+                updateAuthorNav(authorNav);
+            }
+
+            function onTagClick(e) {
+                onBlogFilterClick(e);
+
+                for (let nav of tagNavs) {
+                    updateTagNav(nav);
+                }
+            }
+
+            function onAuthorClick(e) {
+                onBlogFilterClick(e);
+
+                for (let authorNav of authorNavs) {
+                    updateAuthorNav(authorNav);
+                }
+            }
+
+            function onBlogFilterClick(e) {
+                const item = e.target.closest('[data-bss-filter="blog"]');
+                if (!item || !item.dataset.hasOwnProperty('bssHref') || !item.dataset.hasOwnProperty('bssFilterParam')) return;
+
+                const stateNode = item.dataset.hasOwnProperty('bssStateNode') ? item : item.querySelector('[data-bss-state-node]');
+
+                if (stateNode && (stateNode.classList.contains('disabled') || stateNode.classList.contains('active'))) {
+                    e.preventDefault();
+                    return;
+                }
+
+                const link = item.dataset.bssHref;
+                if (!linksToCurrentPage(link)) return;
+
+                e.preventDefault();
+
+                const url = new URL(window.location);
+                const filterParam = item.dataset.bssFilterParam;
+                const filterValue = item.dataset.bssFilterValue || '';
+
+                const collectionsToUpdate = [];
+                const newQueryParams = {
+                    [filterParam]: filterValue
+                };
+
+                for (let c of collections) {
+                    if (!canFilterCollection(c)) continue;
+                    collectionsToUpdate.push(c);
+
+                    let pageParam = getPageParameter(c);
+                    let page = url.searchParams.get(pageParam);
+                    if (page === null || page == 1) continue;
+
+                    newQueryParams[pageParam] = 1;
+                }
+
+                for (let param in newQueryParams) {
+                    if (newQueryParams[param]) {
+                        url.searchParams.set(param, newQueryParams[param]);
+                    } else {
+                        url.searchParams.delete(param);
+                    }
+                }
+
+                history.pushState(newQueryParams, document.title, url);
+
+                for (let c of collectionsToUpdate) {
+                    updateCollection(c);
+                }
+            }
+
+            function getCollectionFilters(collection) {
+                let filters = [];
+
+                try {
+                    const parsed = JSON.parse(collection.dataset.bssFilters);
+
+                    if (Array.isArray(parsed)) {
+                        filters = parsed;
+                    }
+                } catch (e) {}
+
+                return filters;
+            }
+
+            function getCollectionEmptyFilterAction(collection, filter = '') {
+                let emptyFilterActions = [];
+
+                try {
+                    const parsed = JSON.parse(collection.dataset.bssEmptyFilterActions);
+
+                    if (Array.isArray(parsed)) {
+                        emptyFilterActions = parsed;
+                    }
+                } catch (e) {}
+
+                const action = emptyFilterActions.find(action => action.filter === filter);
+
+                return action ? action.value : '';
+            }
+
+            function canFilterCollection(collection) {
+                return !!getCollectionFilters(collection).length;
+            }
+
+            function canFilterCollectionByTag(collection) {
+                return getCollectionFilters(collection).includes('tag');
+            }
+
+            function canFilterCollectionByAuthor(collection) {
+                return getCollectionFilters(collection).includes('author');
+            }
+
+            function shouldShowAllItemsForEmptyFilter(collection, filter = '') {
+                return getCollectionEmptyFilterAction(collection, filter) === 'show-all';
+            }
+
+            function canPaginateCollection(collection) {
+                return !!getCollectionPagination(collection);
+            }
+
+            function getCollectionPagination(collection) {
+                return collection.querySelector('[data-bss-type="blog-loop-pagination"]');
+            }
+
+            function getPageParameter(collection) {
+                return collection.dataset.bssPageParam;
+            }
+
+            function linksToCurrentPage(path = '') {
+                let currentURL, url;
+
+                try {
+                    currentURL = new URL(window.location);
+                    url = new URL(path, window.location.href);
+                } catch (e) {
+                    console.error(e);
+                }
+
+                return currentURL.origin === url.origin && currentURL.pathname === url.pathname;
+            }
+
+            function updateCollection(collection, page, activeTag = '', activeAuthor = '') {
+
+                const url = new URL(window.location.href);
+
+                if (canPaginateCollection(collection)) {
+                    if (!page) {
+                        let pageParam = getPageParameter(collection);
+                        page = (pageParam ? url.searchParams.get(pageParam) : 1) || 1;
+                    }
+                }
+
+                if (canFilterCollectionByTag(collection) && !activeTag) {
+                    let tagParam = 'tag';
+                    activeTag = url.searchParams.get(tagParam) || '';
+                }
+
+                if (canFilterCollectionByAuthor(collection) && !activeAuthor) {
+                    let authorParam = 'author';
+                    activeAuthor = url.searchParams.get(authorParam) || '';
+                }
+
+                renderCollectionPage(collection, page, activeTag, activeAuthor);
+            }
+
+            function renderCollectionPage(collection, page = 1, activeTag = '', activeAuthor = '') {
+
+                page = Math.max(parseInt(page, 10), 1);
+
+                collection.style.removeProperty('display');
+
+                let loopBase = collection.querySelector('[data-bss-type="blog-loop-base"]');
+                loopBase && loopBase.style.removeProperty('display');
+
+                let emptyState = collection.querySelector('[data-bss-type="empty-state"]');
+                emptyState && emptyState.style.setProperty('display', 'none', 'important');
+
+                let listItems = [].slice.call(collection.querySelectorAll('[data-bss-type="blog-loop-item"]'));
+                listItems.forEach(item => item.style.setProperty('display', 'none', 'important'));
+
+                if (canFilterCollectionByTag(collection)) {
+                    listItems = listItems.filter(item => activeTag ? item.classList.contains('post-tag-' + activeTag) : shouldShowAllItemsForEmptyFilter(collection, 'tag'));
+                }
+
+                if (canFilterCollectionByAuthor(collection)) {
+                    listItems = listItems.filter(item => activeAuthor ? item.classList.contains('post-author-' + activeAuthor) : shouldShowAllItemsForEmptyFilter(collection, 'author'));
+                }
+
+                let perPage = collection.dataset.bssPerpage || listItems.length;
+                let visibleListItems = listItems.slice((page - 1) * perPage, page * perPage);
+                visibleListItems.forEach(item => item.style.removeProperty('display'));
+
+                let isEmpty = !visibleListItems.length;
+
+                if (isEmpty) {
+                    loopBase && loopBase.style.setProperty('display', 'none', 'important');
+                    emptyState && emptyState.style.removeProperty('display');
+                }
+
+                let itemCount = listItems.length;
+                let pageCount = Math.max(Math.ceil(itemCount / perPage), 1);
+
+                updateCollectionPagination(collection, page, pageCount, isEmpty);
+
+                if (collection.dataset.bssScrollOnChange) {
+                    scrollToCollectionTop(collection);
+                }
+            }
+
+            function updateCollectionPagination(collection, page, pageCount, isEmpty) {
+                let pagination = getCollectionPagination(collection);
+                if (!pagination) return;
+
+                let paginationItems = [].slice.call(pagination.querySelectorAll('.page-item'));
+
+                if (pageCount === 1 || isEmpty) {
+                    pagination.style.setProperty('display', 'none', 'important');
+                } else {
+                    pagination.style.removeProperty('display');
+                }
+
+                let previousBtnDisabled = page - 1 <= 0;
+                let previousPage = previousBtnDisabled ? 1 : page - 1;
+
+                let nextBtnDisabled = page + 1 > pageCount;
+                let nextPage = nextBtnDisabled ? pageCount : page + 1;
+
+                for (let i = 0; i < paginationItems.length; i++) {
+                    let paginationItem = paginationItems[i];
+
+                    paginationItem.classList.remove('active', 'disabled');
+
+                    if (paginationItem.dataset.type === 'prev') {
+                        paginationItem.dataset.page = previousPage;
+
+                        if (previousBtnDisabled) {
+                            paginationItem.classList.add('disabled');
+                        }
+                    } else if (paginationItem.dataset.type === 'next') {
+                        paginationItem.dataset.page = nextPage;
+
+                        if (nextBtnDisabled) {
+                            paginationItem.classList.add('disabled');
+                        }
+                    } else {
+                        if (paginationItem.dataset.page > pageCount) {
+                            paginationItem.style.setProperty('display', 'none', 'important');
+                        } else {
+                            paginationItem.style.removeProperty('display');
+                        }
+
+                        if (paginationItem.dataset.page == page) {
+                            paginationItem.classList.add('active');
+                        }
+                    }
+                }
+            }
+
+            function scrollToCollectionTop(collection) {
+                const rect = collection.getBoundingClientRect();
+                const viewHeight = Math.max(document.documentElement.clientHeight, window.innerHeight);
+                const threshold = 100;
+
+                if (rect.top >= 0 && viewHeight - rect.top > threshold) return;
+
+                setTimeout(() => {
+                    collection.scrollIntoView({
+                        behavior: "smooth",
+                        block: "start",
+                        inline: "start"
+                    });
+                }, 0);
+            }
+
+            function updateTagNav(tagNav) {
+                const url = new URL(window.location.href);
+
+                let tagParam = 'tag';
+                let tag = url.searchParams.get(tagParam) || '';
+
+                renderTagNav(tagNav, tag);
+            }
+
+            function renderTagNav(tagNav, activeTag = '') {
+                if (!tagNav.dataset.bssSyncUrl) return;
+
+                let navItems = [].slice.call(tagNav.querySelectorAll('[data-bss-type="tag-loop-item"]'));
+
+                navItems.forEach(item => {
+                    const activeClassNode = item.dataset.hasOwnProperty('bssStateNode') ? item : item.querySelector('[data-bss-state-node]');
+                    if (!activeClassNode) return;
+
+                    activeClassNode.classList.remove('active');
+
+                    const link = item.dataset.bssHref;
+                    if (!linksToCurrentPage(link) || activeClassNode.classList.contains('disabled')) return;
+
+                    if (item.dataset.bssTag === activeTag) {
+                        activeClassNode.classList.add('active');
+                    }
+                });
+            }
+
+            function updateAuthorNav(authorNav) {
+                const url = new URL(window.location.href);
+
+                let authorParam = 'author';
+                let author = url.searchParams.get(authorParam) || '';
+
+                renderAuthorNav(authorNav, author);
+            }
+
+            function renderAuthorNav(authorNav, activeAuthor = '') {
+                if (!canFilterCollectionByAuthor(authorNav)) return;
+
+                authorNav.style.removeProperty('display');
+
+                let items = [].slice.call(authorNav.querySelectorAll('[data-bss-type="author-loop-item"]'));
+                items.forEach(item => item.classList.contains('author-' + activeAuthor) ? item.style.removeProperty('display') : item.style.setProperty('display', 'none', 'important'));
+            }
+        })();
+    </script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/prpsa-static-form.js"></script>
-    <script src="assets/js/navbar-scroll.js"></script>
 </body>
 
 </html>

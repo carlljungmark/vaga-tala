@@ -8,372 +8,360 @@
     <meta name="description" content="Information för dig som beslutat dig för att börja våga tala. bli av med scenskräck, skippa beta-blockerarna">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon.png">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Manrope&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
     <link rel="stylesheet" href="assets/css/bss-overrides.css">
     <link rel="stylesheet" href="assets/css/bootstrap.compiled.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/gota.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top" style="background:#ffffff00;" data-bs-theme="dark">
-        <div class="container-fluid"><a href="index.html"><img class="img-fluid" width="400" height="94" src="assets/img/vagatala_logo.png" style="width: 160px;"></a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1" type="button"><span class="navbar-toggler-icon"></span></button>
+    <nav class="navbar navbar-expand-lg fixed-top gota-sticky-nav">
+        <div class="container-fluid"><a href="index.html"><img class="img-fluid" width="400" height="94" src="assets/img/vagatala_logo.png" style="width:160px;"></a><button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1" type="button"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-1">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link fw-semibold" href="#">Hem</a></li>
-                    <li class="nav-item"><a class="nav-link fw-semibold" href="#">Detaljer</a></li>
-                    <li class="nav-item"><a class="btn btn-outline-light fw-semibold border rounded-pill border-light mx-4 px-4 nav-link" role="button">Kontakt</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="index.html">Hem</a></li>
+                    <li class="nav-item"><a class="nav-link fw-semibold" href="#approach">Detaljer</a></li>
+                    <li class="nav-item"><a class="btn btn-outline-light fw-semibold border rounded-pill border-light mx-4 px-4 nav-link" role="button" href="kontakt.html">Kontakt</a></li>
                 </ul>
             </div>
         </div>
     </nav>
-    <header class="pt-5 header">
-        <div class="container">
-            <div class="row">
-                <div class="col text-center py-5">
-                    <h1 class="text-white">PRPSA - självskattning</h1>
-                    <p class="text-white">Fyll i varje påstående enligt hur mycket det stämmer på dig.</p>
-                </div>
-            </div>
-        </div><svg class="frame-decoration" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1920 192.275">
-            <path class="cls-2" d="M0,158.755s63.9,52.163,179.472,50.736c121.494-1.5,185.839-49.738,305.984-49.733,109.21,0,181.491,51.733,300.537,50.233,123.941-1.562,225.214-50.126,390.43-50.374,123.821-.185,353.982,58.374,458.976,56.373,217.907-4.153,284.6-57.236,284.6-57.236V351.03H0V158.755Z" transform="translate(0 -158.755)"></path>
-        </svg>
-    </header>
-    <section class="py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <form id="prpsa-static-form">
-                        <div class="alert alert-light border shadow-sm mb-4" role="alert">
-                            <p class="text-center mb-0"><strong>Skala:</strong> 1 = Stämmer inte alls &nbsp;•&nbsp; 5 = Stämmer helt</p>
-                        </div>
-                        <div class="row fw-bold d-none d-md-flex mb-3 pb-2 border-bottom">
-                            <div class="col-md-8"><span>Fråga</span></div>
-                            <div class="col-md-4 text-center"><span>Skala (1-5)</span></div>
-                        </div>
-                        <div id="questions-list">
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>1.</strong> När jag förbereder mig för ett tal känner jag mig spänd och nervös.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q0" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+    <div class="container">
+        <header class="mt-4 pt-5 header gota-hero"><span class="gota-kicker">PRPSA</span>
+            <h1>PRPSA - självskattning</h1>
+            <p>Fyll i varje påstående enligt hur mycket det stämmer på dig.</p>
+        </header>
+        <section class="py-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <form id="prpsa-static-form">
+                            <div class="alert alert-light border shadow-sm mb-4" role="alert">
+                                <p class="text-center mb-0"><strong>Skala:</strong> 1 = Stämmer inte alls &nbsp;•&nbsp; 5 = Stämmer helt</p>
+                            </div>
+                            <div class="row fw-bold d-none d-md-flex mb-3 pb-2 border-bottom">
+                                <div class="col-md-8"><span>Fråga</span></div>
+                                <div class="col-md-4 text-center"><span>Skala (1-5)</span></div>
+                            </div>
+                            <div id="questions-list">
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>1.</strong> När jag förbereder mig för ett tal känner jag mig spänd och nervös.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q0" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>2.</strong> Jag blir spänd när jag ser ordet 'tal' eller 'presentation' i en uppgift.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q1" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>3.</strong> Mina tankar blir förvirrade och ihoptrasslade när jag håller ett tal.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q2" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>4.</strong> Direkt efter att ha hållit ett tal känner jag att jag haft en behaglig upplevelse.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q3" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>5.</strong> Jag blir ängslig när jag tänker på att ett tal närmar sig.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q4" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>6.</strong> Jag är inte rädd för att hålla tal.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q5" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>7.</strong> Fastän jag är nervös strax innan ett tal, lugnar jag mig snart när jag börjar prata.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q6" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>8.</strong> Jag ser fram emot att hålla ett tal.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q7" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>9.</strong> När läraren meddelar en taluppgift känner jag hur jag blir nervös.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q8" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>10.</strong> Mina händer skakar när jag håller ett tal.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q9" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>11.</strong> Jag känner mig avslappnad när jag håller ett tal.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q10" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>12.</strong> Jag tycker om att förbereda ett tal.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q11" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>13.</strong> Jag är ständigt rädd för att glömma det jag förberett att säga.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q12" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>14.</strong> Jag blir ängslig om någon ställer en fråga om mitt ämne som jag inte kan svara på.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q13" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>15.</strong> Jag tar mig an uppgiften att hålla ett tal med självförtroende.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q14" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>16.</strong> Jag känner att jag har full kontroll över mig själv när jag håller ett tal.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q15" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>17.</strong> Mitt sinne är klart när jag håller ett tal.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q16" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>18.</strong> Jag bävar inte för att hålla tal.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q17" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>19.</strong> Jag svettas strax innan jag börjar ett tal.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q18" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>20.</strong> Mitt hjärta slår mycket fort när jag precis har börjat tala.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q19" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>21.</strong> Jag upplever mycket ångest medan jag sitter i rummet strax innan mitt tal börjar.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q20" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>22.</strong> Vissa delar av min kropp blir mycket spända och stela när jag håller ett tal.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q21" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>23.</strong> Att inse att det bara är lite tid kvar i mitt tal gör mig mycket ängslig.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q22" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>24.</strong> När jag håller ett tal vet jag att jag kan kontrollera mina känslor av spänning och stress.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q23" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>25.</strong> Jag andas snabbare strax innan jag börjar ett tal.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q24" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>26.</strong> Jag känner mig bekväm och avslappnad strax innan jag ska hålla ett tal.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q25" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>27.</strong> Jag presterar sämre på tal på grund av att jag är ängslig.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q26" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>28.</strong> Jag blir ängslig när läraren meddelar datum för en taluppgift.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q27" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>29.</strong> När jag gör ett misstag under ett tal har jag svårt att koncentrera mig på det som följer.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q28" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>30.</strong> Under ett viktigt tal får jag en känsla av hjälplöshet som växer inom mig.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q29" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>31.</strong> Jag har svårt att somna natten innan ett tal.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q30" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>32.</strong> Mitt hjärta slår mycket fort när jag presenterar ett tal.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q31" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>33.</strong> Jag känner mig ängslig medan jag väntar på att få hålla mitt tal.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q32" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
+                                    <div class="row align-items-center">
+                                        <div class="col-md-8"><label class="mb-0 form-label"><strong>34.</strong> När jag håller ett tal blir jag så nervös att jag glömmer information jag egentligen vet.</label></div>
+                                        <div class="col-md-4">
+                                            <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q33" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>2.</strong> Jag blir spänd när jag ser ordet 'tal' eller 'presentation' i en uppgift.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q1" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
+                            <div class="text-center mt-5">
+                                <p class="small text-muted mb-3">Alla 34 frågor måste besvaras för ett korrekt resultat.</p><button class="btn btn-primary btn-lg link-light rounded-pill px-5" type="submit">Beräkna ditt resultat</button>
+                            </div>
+                        </form>
+                        <div class="d-none mt-5" id="result-container">
+                            <div class="card border-0 shadow-lg overflow-hidden">
+                                <div class="card-header text-center text-white py-3" id="result-header">
+                                    <h3 class="mb-0">Ditt Resultat</h3>
+                                </div>
+                                <div class="card-body text-center p-4">
+                                    <div class="fw-bold mb-2 display-3" id="score-display"><span>0</span></div>
+                                    <h4 class="mb-4" id="label-display">Måttlig ångest</h4>
+                                    <div class="progress mb-4" style="height:25px;">
+                                        <div class="progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" id="score-progress" role="progressbar" style="width:0%;"><span class="visually-hidden">50%</span></div>
                                     </div>
+                                    <p class="lead" id="desc-display"></p>
+                                    <hr>
+                                    <p class="small text-muted">Maxpoäng är 170. Skalan: Låg (131).</p>
                                 </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>3.</strong> Mina tankar blir förvirrade och ihoptrasslade när jag håller ett tal.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q2" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>4.</strong> Direkt efter att ha hållit ett tal känner jag att jag haft en behaglig upplevelse.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q3" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>5.</strong> Jag blir ängslig när jag tänker på att ett tal närmar sig.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q4" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>6.</strong> Jag är inte rädd för att hålla tal.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q5" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>7.</strong> Fastän jag är nervös strax innan ett tal, lugnar jag mig snart när jag börjar prata.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q6" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>8.</strong> Jag ser fram emot att hålla ett tal.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q7" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>9.</strong> När läraren meddelar en taluppgift känner jag hur jag blir nervös.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q8" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>10.</strong> Mina händer skakar när jag håller ett tal.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q9" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>11.</strong> Jag känner mig avslappnad när jag håller ett tal.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q10" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>12.</strong> Jag tycker om att förbereda ett tal.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q11" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>13.</strong> Jag är ständigt rädd för att glömma det jag förberett att säga.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q12" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>14.</strong> Jag blir ängslig om någon ställer en fråga om mitt ämne som jag inte kan svara på.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q13" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>15.</strong> Jag tar mig an uppgiften att hålla ett tal med självförtroende.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q14" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>16.</strong> Jag känner att jag har full kontroll över mig själv när jag håller ett tal.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q15" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>17.</strong> Mitt sinne är klart när jag håller ett tal.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q16" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>18.</strong> Jag bävar inte för att hålla tal.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q17" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>19.</strong> Jag svettas strax innan jag börjar ett tal.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q18" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>20.</strong> Mitt hjärta slår mycket fort när jag precis har börjat tala.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q19" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>21.</strong> Jag upplever mycket ångest medan jag sitter i rummet strax innan mitt tal börjar.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q20" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>22.</strong> Vissa delar av min kropp blir mycket spända och stela när jag håller ett tal.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q21" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>23.</strong> Att inse att det bara är lite tid kvar i mitt tal gör mig mycket ängslig.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q22" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>24.</strong> När jag håller ett tal vet jag att jag kan kontrollera mina känslor av spänning och stress.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q23" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>25.</strong> Jag andas snabbare strax innan jag börjar ett tal.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q24" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>26.</strong> Jag känner mig bekväm och avslappnad strax innan jag ska hålla ett tal.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q25" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>27.</strong> Jag presterar sämre på tal på grund av att jag är ängslig.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q26" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>28.</strong> Jag blir ängslig när läraren meddelar datum för en taluppgift.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q27" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>29.</strong> När jag gör ett misstag under ett tal har jag svårt att koncentrera mig på det som följer.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q28" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>30.</strong> Under ett viktigt tal får jag en känsla av hjälplöshet som växer inom mig.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q29" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>31.</strong> Jag har svårt att somna natten innan ett tal.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q30" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>32.</strong> Mitt hjärta slår mycket fort när jag presenterar ett tal.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q31" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>33.</strong> Jag känner mig ängslig medan jag väntar på att få hålla mitt tal.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q32" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="bg-white border rounded shadow-sm p-3 mb-2 question-row">
-                                <div class="row align-items-center">
-                                    <div class="col-md-8"><label class="mb-0 form-label"><strong>34.</strong> När jag håller ett tal blir jag så nervös att jag glömmer information jag egentligen vet.</label></div>
-                                    <div class="col-md-4">
-                                        <div class="d-flex align-items-center gap-3"><input class="form-range" type="range" id="q33" max="5" min="1" value="3"><span class="badge bg-primary rounded-pill q-val">3</span></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center mt-5">
-                            <p class="small text-muted mb-3">Alla 34 frågor måste besvaras för ett korrekt resultat.</p><button class="btn btn-primary btn-lg rounded-pill px-5" type="submit">Beräkna mitt resultat</button>
-                        </div>
-                    </form>
-                    <div class="d-none mt-5" id="result-container">
-                        <div class="card border-0 shadow-lg overflow-hidden">
-                            <div class="card-header text-center text-white py-3" id="result-header">
-                                <h3 class="mb-0">Ditt Resultat</h3>
-                            </div>
-                            <div class="card-body text-center p-4">
-                                <div class="fw-bold mb-2 display-3" id="score-display"><span>0</span></div>
-                                <h4 class="mb-4" id="label-display">Måttlig ångest</h4>
-                                <div class="progress mb-4" style="height:25px;">
-                                    <div class="progress-bar progress-bar-striped progress-bar-animated" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" id="score-progress" role="progressbar" style="width:0%;"><span class="visually-hidden">50%</span></div>
-                                </div>
-                                <p class="lead" id="desc-display"></p>
-                                <hr>
-                                <p class="small text-muted">Maxpoäng är 170. Skalan: Låg (131).</p>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer class="text-white bg-dark mt-5 py-4">
-        <div class="container text-center">
-            <p class="mb-0">© 2024 PRPSA Självskattning</p>
-        </div>
-    </footer>
-    <footer class="text-light bg-dark border-primary py-4 border-top">
+        </section>
+    </div>
+    <footer class="text-light bg-dark border-primary py-4 gota-footer">
         <div class="container">
             <div class="row">
-                <div class="col-auto col-md-8">
-                    <ul class="nav nav-tabs border-0">
-                        <li class="nav-item"><a class="nav-link link-light" href="index.html">Hem</a></li>
-                        <li class="nav-item"><a class="nav-link link-light" href="#details">Detaljer</a></li>
-                        <li class="nav-item"><a class="nav-link link-light" href="kontakt.html">Kontakt</a></li>
-                    </ul>
+                <div class="col-auto col-md-6">
+                    <h2 class="mt-3 gota-footer-title">Vänta inte med att våga tala</h2>
+                    <p class="gota-footer-note">Det finns ingen bättre tid att bli av med scenskräcken än just nu!</p>
                 </div>
-                <div class="col-auto col-md-4 d-flex flex-column justify-content-center align-items-center">
-                    <p class="text-end d-none d-md-block ms-0 me-0">Våga Tala 2026&nbsp;</p>
+                <div class="col-auto col-md-6 d-flex flex-column justify-content-center align-items-center">
+                    <div class="gota-footer-links"><a href="#">Hem</a><a href="#">Formulär</a><a href="#">Kontakt</a></div>
                 </div>
             </div>
         </div>
     </footer>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/prpsa-static-form.js"></script>
-    <script src="assets/js/navbar-scroll.js"></script>
 </body>
 
 </html>
