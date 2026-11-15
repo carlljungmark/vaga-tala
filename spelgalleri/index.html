@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software Factory</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="gallery.js"></script>
+</head>
+<body>
+  <main>
+    <header><p>Spelgalleri</p><h1>Software Factory</h1></header>
+    <ul id="games" aria-label="Spel"></ul>
+    <p id="message" role="status"></p>
+    <section id="player" hidden aria-labelledby="game-title">
+      <h2 id="game-title"></h2>
+      <iframe id="game" sandbox="allow-scripts" referrerpolicy="no-referrer" title="Spel"></iframe>
+    </section>
+  </main>
+</body>
+</html>

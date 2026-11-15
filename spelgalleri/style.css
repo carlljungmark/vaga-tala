@@ -1,0 +1,12 @@
+:root { color-scheme: dark; font: 17px/1.5 "Geist", system-ui, sans-serif; background: #101617; color: #ededde; }
+body { margin: 0; }
+main { max-width: 64rem; margin: auto; padding: clamp(1rem, 5vw, 4rem); }
+header { border-bottom: 1px solid #4b5b57; margin-bottom: 1.5rem; padding-bottom: 1rem; }
+header p { margin: 0; color: #a8f3bf; }
+h1 { font-size: clamp(2.4rem, 8vw, 5.5rem); line-height: 1; margin: .25em 0; letter-spacing: -.06em; }
+ul { list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr)); gap: .75rem; padding: 0; }
+li { border: 1px solid #4b5b57; padding: 1rem; background: #182122; }
+li p { margin: .6rem 0 0; }
+button { font: inherit; font-weight: 700; text-align: left; background: #a8f3bf; color: #0e2520; border: 0; border-radius: .3rem; padding: .45rem .8rem; cursor: pointer; }
+:focus-visible { outline: 3px solid #ffd17e; outline-offset: 4px; }
+iframe { width: 100%; min-height: 31rem; border: 1px solid #4b5b57; box-sizing: border-box; background: #182122; }
