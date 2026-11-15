@@ -9,4 +9,4 @@ li { border: 1px solid #4b5b57; padding: 1rem; background: #182122; }
 li p { margin: .6rem 0 0; }
 button { font: inherit; font-weight: 700; text-align: left; background: #a8f3bf; color: #0e2520; border: 0; border-radius: .3rem; padding: .45rem .8rem; cursor: pointer; }
 :focus-visible { outline: 3px solid #ffd17e; outline-offset: 4px; }
-iframe { width: 100%; min-height: 31rem; border: 1px solid #4b5b57; box-sizing: border-box; background: #182122; }
+iframe { width: 100%; height: 31rem; border: 1px solid #4b5b57; box-sizing: border-box; background: #182122; }
