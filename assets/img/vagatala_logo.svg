@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="220" height="54" viewBox="0 0 220 54" role="img" aria-labelledby="title description">
+  <title id="title">Våga Tala</title>
+  <desc id="description">Våga Tala med en pratbubbla och en stiliserad ljudvåg.</desc>
+  <g transform="translate(0 13) scale(.39)">
+    <path d="M13 0h53a13 13 0 0 1 13 13v28a13 13 0 0 1-13 13H51L35 67V54H13A13 13 0 0 1 0 41V13A13 13 0 0 1 13 0Z" fill="#0d7f78"/>
+    <path d="M19 27h4m8-10v20m9-14v8m9-13v18" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="6"/>
+  </g>
+  <text x="42" y="40" fill="#152028" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="750" letter-spacing="-.7">Våga <tspan fill="#0d7f78" font-weight="650">Tala</tspan></text>
+</svg>
