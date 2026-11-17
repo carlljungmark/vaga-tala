@@ -15727,7 +15727,19 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .display-1, .display-2, .d
   position: sticky;
   top: 12px;
   z-index: 1020;
-  width: min(1280px, calc(100% - 32px));
+  width: min(var(--site-container-max-width), calc(100% - var(--site-container-gutter)));
+  margin-right: auto;
+  margin-left: auto;
+}
+
+:root {
+  --site-container-max-width: 1280px;
+  --site-container-gutter: 32px;
+}
+
+.site-container {
+  width: min(calc(var(--site-container-max-width) + 24px), calc(100% - 8px));
+  max-width: none;
   margin-right: auto;
   margin-left: auto;
 }
@@ -15872,7 +15884,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .display-1, .display-2, .d
 }
 
 .showcase-shell {
-  width: min(1280px, 100% - 32px);
+  width: min(var(--site-container-max-width), calc(100% - var(--site-container-gutter)));
   margin: 0 auto;
   padding: 24px 0 72px;
 }
