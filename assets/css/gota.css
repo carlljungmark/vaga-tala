@@ -15727,6 +15727,9 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, .display-1, .display-2, .d
   position: sticky;
   top: 12px;
   z-index: 1020;
+  width: min(1280px, calc(100% - 32px));
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .navbar-brand {
