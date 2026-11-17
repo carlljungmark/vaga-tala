@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700" role="img" aria-labelledby="title description">
+  <title id="title">Att våga tala inför andra</title>
+  <desc id="description">En talare står vid en talarstol under ett varmt strålkastarljus, inför en lyssnande publik.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#123d49"/>
+      <stop offset="1" stop-color="#172638"/>
+    </linearGradient>
+    <linearGradient id="light" x1="0" x2="0.8" y1="0" y2="1">
+      <stop offset="0" stop-color="#ffe9ad" stop-opacity=".85"/>
+      <stop offset="1" stop-color="#ffc078" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="stage" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#0d7f78"/>
+      <stop offset="1" stop-color="#164e59"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" rx="36" fill="url(#background)"/>
+  <circle cx="610" cy="120" r="155" fill="#ffe0a0" opacity=".14"/>
+  <path d="M470 0h290L915 490H290z" fill="url(#light)"/>
+  <path d="M0 500c160-55 275-30 420 0s285 33 430-2 225-34 350-2v204H0z" fill="#101c29" opacity=".7"/>
+  <path d="M0 590c165-35 276-18 423 5 158 24 288 20 430-9 128-26 236-28 347-3v117H0z" fill="#0c1722"/>
+  <g fill="#203647">
+    <path d="M95 700v-82c0-46 29-78 66-78s67 32 67 78v82z"/>
+    <circle cx="161" cy="548" r="39"/>
+    <path d="M270 700v-96c0-48 31-80 69-80s68 32 68 80v96z"/>
+    <circle cx="339" cy="533" r="40"/>
+    <path d="M774 700v-92c0-49 32-81 70-81s70 32 70 81v92z"/>
+    <circle cx="844" cy="526" r="41"/>
+    <path d="M946 700v-85c0-49 31-81 68-81s68 32 68 81v85z"/>
+    <circle cx="1014" cy="548" r="39"/>
+  </g>
+  <g>
+    <path d="M525 695v-110c0-56 34-94 79-94s80 38 80 94v110z" fill="url(#stage)"/>
+    <circle cx="604" cy="444" r="49" fill="#f1b58b"/>
+    <path d="M555 447c2-48 26-75 61-75 33 0 57 22 63 61-26-4-43-20-52-38-13 25-35 43-72 52z" fill="#293642"/>
+    <path d="M564 510c25 15 57 18 84 1l17 30c-36 32-85 30-120-1z" fill="#f3f5f2"/>
+    <path d="M684 531h132v166H684z" fill="#c47a50"/>
+    <path d="M666 516h168l-20 27H684z" fill="#efb17f"/>
+    <path d="M716 565h70v9h-70z" fill="#f9d5a5" opacity=".7"/>
+  </g>
+  <g fill="none" stroke="#fff0ce" stroke-linecap="round" opacity=".7">
+    <path d="M224 145c23-21 54-21 77 0" stroke-width="5"/>
+    <path d="M899 162c18-18 43-18 61 0" stroke-width="5"/>
+    <path d="M298 216c14-13 34-13 48 0" stroke-width="4"/>
+  </g>
+  <rect x="42" y="42" width="1116" height="616" rx="26" fill="none" stroke="#ffffff" stroke-opacity=".12" stroke-width="2"/>
+</svg>
