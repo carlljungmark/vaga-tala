@@ -64,6 +64,17 @@
         .article-content li {
             margin-bottom: 0.65rem;
         }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .showcase-shell {
+            flex: 1 0 auto;
+            padding-bottom: 0;
+        }
     </style>
 </head>
 
@@ -133,7 +144,8 @@
             </article>
         </main>
 
-        <footer class="text-light bg-dark border-primary py-4 gota-footer">
+    </div>
+    <footer class="text-light bg-dark border-primary py-4 gota-footer">
             <div class="container site-container">
                 <div class="row">
                     <div class="col-auto col-md-6">
@@ -145,8 +157,7 @@
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
+    </footer>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
